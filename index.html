@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For You ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            margin-top: 120px;
+        }
+
+        h1 {
+            font-size: 45px;
+            animation: glow 2s infinite alternate;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 10px;
+        }
+
+        #yes {
+            background-color: white;
+            color: #ff4e75;
+        }
+
+        #yes:hover {
+            background-color: #ff4e75;
+            color: white;
+        }
+
+        #no {
+            background-color: #333;
+            color: white;
+            position: absolute;
+        }
+
+        #message {
+            margin-top: 30px;
+            font-size: 22px;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px white; }
+            to { text-shadow: 0 0 25px #ffe3ec; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mutheeeeeeeee 😁😁😁❤️</h1>
+        <p>Oru day late ahnenn enikk ariyaa ennalummm oruu karyamm choikann vendi ahhh😁😁😁</p>
+        <p>Apaaa aahh karyamm angg choikalleee......allleeeee😁😁😉😉</p>
+        <p>Would you be my Valentine kocheee for the rest of my life?</p>
+
+        <button id="yes" onclick="yesClicked()">Yes 😊</button>
+        <button id="no" onmouseover="moveButton()">No 🙃</button>
+
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function yesClicked() {
+            document.getElementById("message").innerHTML =
+            "Loveee u daah ponnaahhhhh 😘😘😘😘😘💋💋💋💋";
+        }
+
+        function moveButton() {
+            var button = document.getElementById("no");
+            var x = Math.random() * (window.innerWidth - 100);
+            var y = Math.random() * (window.innerHeight - 50);
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+    </script>
+
+</body>
+
+</html>
